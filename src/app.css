@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-purple: hsl(259, 100%, 65%);
+  --primary-light-red: hsl(0, 100%, 67%);
+
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-grey: hsl(0, 0%, 86%);
+  --neutral-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+
+  --font-input: 32px;
+}
+
+/* Impor font lokal */
+@font-face {
+  font-family: 'Poppins';
+  src:
+    url('fonts/Poppins-Regular.ttf') format('truetype'),
+    url('fonts/Poppins-Italic.ttf') format('truetype'),
+    url('fonts/Poppins-Bold.ttf') format('truetype'),
+    url('fonts/Poppins-BoldItalic.ttf') format('truetype'),
+    url('fonts/Poppins-ExtraBold.ttf') format('truetype'),
+    url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@layer base {
+  body,
+  html {
+    height: 100%;
+  }
+
+  #app {
+    height: 100%
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--neutral-off-white);
+  }
+}
