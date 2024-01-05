@@ -20,26 +20,36 @@
 @font-face {
   font-family: 'Poppins';
   src:
-    url('fonts/Poppins-Regular.ttf') format('truetype'),
-    url('fonts/Poppins-Italic.ttf') format('truetype'),
-    url('fonts/Poppins-Bold.ttf') format('truetype'),
-    url('fonts/Poppins-BoldItalic.ttf') format('truetype'),
-    url('fonts/Poppins-ExtraBold.ttf') format('truetype'),
-    url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    url('/fonts/Poppins-Regular.ttf') format('truetype'),
+    url('/fonts/Poppins-Italic.ttf') format('truetype'),
+    url('/fonts/Poppins-Bold.ttf') format('truetype'),
+    url('/fonts/Poppins-BoldItalic.ttf') format('truetype'),
+    url('/fonts/Poppins-ExtraBold.ttf') format('truetype'),
+    url('/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
 }
 
 @layer base {
-  body,
-  html {
-    height: 100%;
-  }
-
-  #app {
-    height: 100%
-  }
 
   body {
     font-family: "Poppins", sans-serif;
     background-color: var(--neutral-off-white);
   }
+}
+
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-moz-inner-spin-button,
+input[type="number"]::-moz-outer-spin-button {
+  -moz-appearance: none;
+  margin: 0;
 }

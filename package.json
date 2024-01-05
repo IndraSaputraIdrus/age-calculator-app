@@ -20,5 +20,8 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "clsx": "^2.1.0"
+  }
 }
